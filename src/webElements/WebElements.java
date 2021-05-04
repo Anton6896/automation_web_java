@@ -24,6 +24,7 @@ public class WebElements {
         String txt1 = driver.findElement(By.id("display")).getText();
         System.out.println("text is : " + txt1);
 
+
 //        check box
         driver.findElement(By.cssSelector("ul.nav:nth-child(1) > li:nth-child(1) > a:nth-child(1)")).click();
         driver.findElement(By.cssSelector(".open > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1)")).click();
