@@ -41,6 +41,19 @@ public class webElemF {
             System.out.println("test 1 ok");
         }
 
+        driver.findElement(By.id("sum1")).sendKeys("2");
+        driver.findElement(By.id("sum2")).sendKeys("2");
+        driver.findElement(By.cssSelector("button.btn:nth-child(3)")).click();
+        String txt2 = driver.findElement(By.id("displayvalue")).getText();
+        if (txt2.equals("4")) {
+            System.out.println("tst 2 ok ");
+        }
+
+//        go to tutor
+//        link text is for links with a tag
+        driver.findElement(By.linkText("Gecko Driver Selenium 3")).click();
+        Thread.sleep(1000);
+
         driver.close();
     }
 }
