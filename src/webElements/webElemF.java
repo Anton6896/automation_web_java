@@ -2,6 +2,7 @@ package webElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.File;
@@ -33,7 +34,10 @@ public class webElemF {
         WebDriver driver = new FirefoxDriver();
 
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+
         driver.findElement(By.id("user-message")).sendKeys("testing");
         driver.findElement(By.cssSelector("button.btn:nth-child(2)")).click();
         String txt1 = driver.findElement(By.id("display")).getText();
@@ -55,5 +59,18 @@ public class webElemF {
         Thread.sleep(1000);
 
         driver.close();
+    }
+
+    static void xpathLookup() {
+//        https://developer.mozilla.org/en-US/docs/Web/XPath/Functions
+        driver.navigate().to("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
+
+//        element input that contains text
+        WebElement textField = driver.findElement(By.xpath("//input[contains(@placeholder, 'Please enter')]"));
+        textField.sendKeys("some mess");
+
+//        get element that contain the text exactly
+        driver.findElement(By.xpath("//*[text()='Show Message']")).click();
+
     }
 }
