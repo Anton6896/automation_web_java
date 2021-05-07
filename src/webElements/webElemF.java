@@ -33,7 +33,9 @@ public class webElemF {
         System.setProperty("webdriver.gecko.driver", driverPath);
         WebDriver driver = new FirefoxDriver();
 
+//        wait for page
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+//        wait for object on page
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
