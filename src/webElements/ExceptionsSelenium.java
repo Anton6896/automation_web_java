@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ExceptionsSelenium {
     public static void main(String[] args) {
-        DriverData dd = new DriverData();
+        DriverData dd = new DriverData("firefox");
         WebDriver driver = dd.getDriver();
 
         try {

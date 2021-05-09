@@ -12,7 +12,7 @@ import java.util.List;
 public class AlertsOnPage {
     public static void main(String[] args) {
 
-        DriverData dd = new DriverData();
+        DriverData dd = new DriverData("chrome");
         WebDriver driver = dd.getDriver();
 
 //        drop(driver);
