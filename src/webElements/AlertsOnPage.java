@@ -4,44 +4,16 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.File;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
+
 
 public class AlertsOnPage {
-
-    static String driverPath = null;
-    static WebDriver driver;
-    private static String OS = null;
-
-    static void mySys() {
-        if (OS == null) {
-            OS = System.getProperty("os.name");
-        }
-
-        if ("Windows 10".equals(OS)) {
-            driverPath = "drivers_for_selenium" + File.separator +
-                    "chromedriver_win32" + File.separator +
-                    "chromedriver.exe";
-        }
-
-    }
-
     public static void main(String[] args) {
 
-        mySys();
-        System.setProperty("webdriver.chrome.driver", driverPath);
-        driver = new ChromeDriver();
-
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+        DriverData dd = new DriverData();
+        WebDriver driver = dd.getDriver();
 
 //        drop(driver);
         alertCheck(driver);
@@ -51,6 +23,7 @@ public class AlertsOnPage {
 
     /**
      * select data from drop down menu (countries ...)
+     *
      * @param driver WebDriver obj
      */
     static void drop(WebDriver driver) {
@@ -79,6 +52,7 @@ public class AlertsOnPage {
     /**
      * over to js alerts
      * accept or decline and send text to it
+     *
      * @param driver WebDriver obj
      */
     static void alertCheck(WebDriver driver) {
