@@ -55,8 +55,7 @@ public class WaiteElem {
 
         String isGreen = wait.until(ExpectedConditions.visibilityOf(
                 driver.findElement(By.cssSelector(".table > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) >" +
-                        " div:nth-child(1) > div:nth-child(2) > h4:nth-child(2) > span:nth-child(1)"))
-        )).getText();
+                        " div:nth-child(1) > div:nth-child(2) > h4:nth-child(2) > span:nth-child(1)")))).getText();
 
         if ("(Green)".equals(isGreen)) {
             System.out.println("isGreen ok ");
