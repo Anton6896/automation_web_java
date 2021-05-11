@@ -1,11 +1,14 @@
 package webElements;
 
+import Data.DriverData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 public class ExceptionsSelenium {
-    public static void main(String[] args) {
+    @Test
+    void look() {
         DriverData dd = new DriverData("firefox");
         WebDriver driver = dd.getDriver();
 
@@ -21,7 +24,6 @@ public class ExceptionsSelenium {
         }
 
         System.out.println("suite is continue to work");
-
     }
 }
 
