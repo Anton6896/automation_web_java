@@ -1,17 +1,20 @@
 package webElements;
 
-import Data.DriverData;
+import DriverProperties.DriverData;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+@Listeners(TestListenerMy.class)
+
 
 public class ListenersSel {
 
     @Test
-    void scrollPage() throws InterruptedException {
+    void scrollPage() {
         WebDriver driver = new DriverData("chrome").getDriver();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         EventFiringWebDriver event = new EventFiringWebDriver(driver);
@@ -198,9 +201,4 @@ class EventCapture implements WebDriverEventListener {
 
     }
 }
-
-
-/**
- * on test start or stop and any result handler for test
- */
 

@@ -1,6 +1,6 @@
 package webElements;
 
-import Data.DriverData;
+import DriverProperties.DriverData;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
