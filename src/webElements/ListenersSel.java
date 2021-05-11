@@ -4,40 +4,54 @@ import Data.DriverData;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class ListenersSel {
 
     @Test
     void scrollPage() throws InterruptedException {
-        WebDriver DRIVER = new DriverData("chrome").getDriver();
-        JavascriptExecutor js = (JavascriptExecutor) DRIVER;
-        EventFiringWebDriver event = new EventFiringWebDriver(DRIVER);
-        EventCapture EVENT_CAPTURE = new EventCapture();
-        event.register(EVENT_CAPTURE);
+        WebDriver driver = new DriverData("chrome").getDriver();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        EventFiringWebDriver event = new EventFiringWebDriver(driver);
+        EventCapture eCapture = new EventCapture();
+        event.register(eCapture);
 
         event.navigate().to("https://www.guru99.com/scroll-up-down-selenium-webdriver.html");
+
+//        try {
+//            WebDriverWait wait = new WebDriverWait(DRIVER, 5);
+//            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"om-dgojyzueujjf7huvd8jh-yesno\"]" +
+//                    "/div/button/svg"))).click();
+//        } catch (TimeoutException e) {
+//            System.out.println(" no elem");
+//        }
+
         // scroll till see element
-        WebElement element = DRIVER.findElement(By.cssSelector(".item-page > div:nth-child(3) > pre:nth-child(59)"));
+        WebElement element = driver.findElement(By.cssSelector(".item-page > div:nth-child(3) > pre:nth-child(59)"));
         js.executeScript("arguments[0].scrollIntoView();", element);
 
 
-        DRIVER.quit();
+        event.quit();
+        event.unregister(eCapture);
+        driver.quit();
     }
 
     @Test
     void beforeAndAfter() {
         WebDriver DRIVER = new DriverData("chrome").getDriver();
-        EventCapture EVENT_CAPTURE = new EventCapture();
+        EventCapture eCapture = new EventCapture();
         EventFiringWebDriver event = new EventFiringWebDriver(DRIVER);
-        event.register(EVENT_CAPTURE);
+        event.register(eCapture);
 
         event.navigate().to("https://www.seleniumeasy.com/test/bootstrap-date-picker-demo.html");
         DRIVER.findElement(By.cssSelector(".glyphicon-th")).click();
         DRIVER.findElement(By.cssSelector(".datepicker-days > table:nth-child(1) > tbody:nth-child(2) >" +
                 " tr:nth-child(2) > td:nth-child(5)")).click();
 
-
+        event.quit();
+        event.unregister(eCapture);
         DRIVER.quit();
     }
 
