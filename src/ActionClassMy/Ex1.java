@@ -20,8 +20,10 @@ public class Ex1 {
     @BeforeTest
     void before() {
         driver = new DriverData("chrome").getDriver();
-        driver.manage().window().setPosition(new Point(0, 0));
-        driver.manage().window().setSize(new Dimension(1000, 1200));
+//        driver.manage().window().setPosition(new Point(0, 0));
+//        driver.manage().window().setSize(new Dimension(1000, 1200));
+        driver.manage().window().maximize();
+
     }
 
     @Test
@@ -34,7 +36,7 @@ public class Ex1 {
 
         // drag and drop // position 409, 64
         Actions action = new Actions(driver);
-        action.dragAndDrop(elemToDrag, dropZone).build().perform(); // not working here !!!!
+        action.dragAndDropBy(elemToDrag, 1263, 451).build().perform(); // not working here !!!!
 
         // find after drag
         WebDriverWait wait = new WebDriverWait(driver, 5);
