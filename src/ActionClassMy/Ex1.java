@@ -5,7 +5,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -15,7 +14,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class Ex1 {
-    WebDriver driver;
+    WebDriver driver = null;
     String dragAndDrop = "https://www.seleniumeasy.com/test/drag-and-drop-demo.html";
 
     @BeforeTest
@@ -35,7 +34,7 @@ public class Ex1 {
 
         // drag and drop // position 409, 64
         Actions action = new Actions(driver);
-        action.dragAndDrop(elemToDrag, dropZone).build().perform(); // not working here
+        action.dragAndDrop(elemToDrag, dropZone).build().perform(); // not working here !!!!
 
         // find after drag
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -80,6 +79,7 @@ public class Ex1 {
     void droppableJquery() {
         driver.navigate().to("https://jqueryui.com/droppable/#content");
 
+        // eky fo find elements is to switch to the frame ! that elements exists in
         driver.switchTo().frame(0);
 
         WebElement dragMe = driver.findElement(By.id("draggable"));
@@ -99,6 +99,7 @@ public class Ex1 {
         seriesOfActions.perform();
 
         String dropped = driver.findElement(By.id("droppable")).getText();
+
         Assert.assertEquals(
                 "Dropped!",
                 dropped
