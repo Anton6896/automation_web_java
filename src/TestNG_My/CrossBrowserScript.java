@@ -20,9 +20,9 @@ public class CrossBrowserScript {
 
 
     @BeforeTest
-    // this param will be used in xml docs
     @Parameters({"browser", "text"})
     void setup(String browser, String text) {
+        // use Parameters in xml file
         System.out.println(text);
         driver = new DriverData(browser).getDriver();
         driver.manage().window().setPosition(new Point(0, 0));
@@ -30,7 +30,7 @@ public class CrossBrowserScript {
     }
 
     @Test
-    void SimpleFormFilling() throws InterruptedException {
+    void simpleFormFilling() {
         /*
          * will be tested in couple browsers with an xml config
          */
@@ -43,10 +43,21 @@ public class CrossBrowserScript {
         );
     }
 
+    @Test
+    void twoInputs() {
+        driver.findElement(By.id("sum1")).sendKeys("1");
+        driver.findElement(By.id("sum2")).sendKeys("2");
+        driver.findElement(By.cssSelector("button.btn:nth-child(3)")).click();
+
+        Assert.assertEquals(
+                "3",
+                driver.findElement(By.id("displayvalue")).getText()
+        );
+    }
+
+
     @AfterTest
     void finish() {
         driver.quit();
     }
-
-
 }
