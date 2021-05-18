@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/selenium_full_course.iml" filepath="$PROJECT_DIR$/selenium_full_course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/automation_web_java.iml" filepath="$PROJECT_DIR$/automation_web_java.iml" />
     </modules>
   </component>
 </project>
