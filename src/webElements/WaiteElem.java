@@ -2,7 +2,6 @@
 
 package webElements;
 
-import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -64,7 +63,7 @@ public class WaiteElem {
         driver.close();
     }
 
-    static void waitForValue(WebDriver driver, WebElement element, int timeout, @NotNull String value) {
+    static void waitForValue(WebDriver driver, WebElement element, int timeout, String value) {
         // explicit wait
         // wait for element on age and compare the value to element's text value
         new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));

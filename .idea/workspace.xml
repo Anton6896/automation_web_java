@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab19956d-d9cf-4876-9b01-6c09cb77ba94" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="34a2a895-2c3c-4761-80f4-ff13b1b0b5ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automation_web_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/automation_web_java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DriverProperties/DriverData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DriverProperties/DriverData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webElements/WaiteElem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/webElements/WaiteElem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1sh9GpatkxkYW0HCbmfS8eQxva4" />
+  <component name="ProjectId" id="1sh9RuXgiqSC8HbKKX4DZpYkNfr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -24,16 +24,129 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/drivers_for_selenium/selenium-java-3.141.59" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.19446772" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drivers_for_selenium" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG./home/anton/Documents/dev/automation_web_java/src/TestNG_My/testng.xml">
+    <configuration name="Ex_1.ajaxForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestNG_My.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestNG_My" />
+      <option name="MAIN_CLASS_NAME" value="TestNG_My.Ex_1" />
+      <option name="METHOD_NAME" value="ajaxForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex_2.verifyAjax" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestNG_My.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestNG_My" />
+      <option name="MAIN_CLASS_NAME" value="TestNG_My.Ex_2" />
+      <option name="METHOD_NAME" value="verifyAjax" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListOfElements.ulToList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webElements" />
+      <option name="MAIN_CLASS_NAME" value="webElements.ListOfElements" />
+      <option name="METHOD_NAME" value="ulToList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rob1.rob_1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RobotsMy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RobotsMy" />
+      <option name="MAIN_CLASS_NAME" value="RobotsMy.Rob1" />
+      <option name="METHOD_NAME" value="rob_1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/anton/Documents/dev/automation_web_java/src/TestNG_My/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/TestNG_My/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./home/anton/Documents/dev/automation_web_java/src/TestNG_My/testng.xml" />
+        <item itemvalue="TestNG.Ex_2.verifyAjax" />
+        <item itemvalue="TestNG.Ex_1.ajaxForm" />
+        <item itemvalue="TestNG.ListOfElements.ulToList" />
+        <item itemvalue="TestNG.Rob1.rob_1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ab19956d-d9cf-4876-9b01-6c09cb77ba94" name="Default Changelist" comment="" />
-      <created>1621313862127</created>
+      <changelist id="34a2a895-2c3c-4761-80f4-ff13b1b0b5ed" name="Default Changelist" comment="" />
+      <created>1621313950861</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621313862127</updated>
+      <updated>1621313950861</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

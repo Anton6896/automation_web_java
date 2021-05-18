@@ -5,7 +5,38 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="openjdk-16" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/drivers_for_selenium/testng-7.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/drivers_for_selenium/selenium-server-standalone-3.141.59.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/drivers_for_selenium/selenium-java-3.141.59" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/drivers_for_selenium/selenium-java-3.141.59" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/drivers_for_selenium/selenium-java-3.141.59" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/drivers_for_selenium/selenium-java-3.141.59" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>
