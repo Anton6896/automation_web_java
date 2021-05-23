@@ -2,6 +2,7 @@ package Grid_t;
 
 import DriverProperties.DriverData;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -17,12 +18,10 @@ import java.util.concurrent.TimeUnit;
  * by creating grid you can control couple machines by user -> host
  * <p>
  * creating server selenium (by ip)
- * >>> java -jar .\selenium-server-standalone-3.141.59.jar -role hub
+ * >>> java -jar ".\selenium-server-standalone-3.141.59.jar -role hub"
  * <p>
  * creating hosts (by ip)  (in win must use "" for arguments)
- * >>> java "-Dwebdriver.chrome.driverD:\Documen
- * ts\dev\selenium_full_course\drivers_for_selenium\chromedriver_win32\chromedriver.exe" -jar ".\selenium-server-standalone-3.141.59.jar"
- * -role node -hub "http://192.168.232.1:4444/grid/register/"
+ * >>> java "-Dwebdriver.chrome.driverD:\Documents\dev\selenium_full_course\drivers_for_selenium\chromedriver_win32\chromedriver.exe" -jar "D:\Documents\dev\selenium_full_course\drivers_for_selenium\selenium-server-standalone-3.141.59.jar" -role node -hub "http://192.168.232.1:4444/grid/register/"
  * <p>
  * testing grid
  */
@@ -33,7 +32,6 @@ public class Ex_1 {
 
 
     public static void main(String[] args) throws MalformedURLException {
-        String checkBox = "https://www.seleniumeasy.com/test/basic-checkbox-demo.html";
         String nodeUrl = "http://192.168.232.1:4444/wd/hub";
 
 
@@ -42,13 +40,14 @@ public class Ex_1 {
         cap.setPlatform(Platform.WIN10);
 
         WebDriver driver = new RemoteWebDriver(new URL(nodeUrl), cap);
+
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.manage().window().setPosition(new Point(0, 0));
         driver.manage().window().setSize(new Dimension(1000, 1200));
 
 
-        driver.get(checkBox);
+        driver.get("https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
         driver.findElement(By.id("isAgeSelected")).click();
         String txt = driver.findElement(By.id("txtAge")).getText().toLowerCase();
         Assert.assertTrue(txt.contains("success"));
