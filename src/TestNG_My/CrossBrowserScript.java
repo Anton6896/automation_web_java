@@ -22,18 +22,28 @@ public class CrossBrowserScript {
     @BeforeTest
     @Parameters({"browser", "text"})
     void setup(String browser, String text) {
-        // use Parameters in xml file
+        /*
+         * configure the driver params based on the xml file
+         * for crossed based testing
+         */
         System.out.println(text);
+        /*
+         * Driver data class will handle the request from xml
+         * that which browser to use and handle all pre configs for ech browser
+         * can say that browser builder
+         */
         driver = new DriverData(browser).getDriver();
+
+        // adjust window params
         driver.manage().window().setPosition(new Point(0, 0));
         driver.manage().window().setSize(new Dimension(1000, 1200));
     }
 
+    /*
+     * test for ech browser
+     */
     @Test
     void simpleFormFilling() {
-        /*
-         * will be tested in couple browsers with an xml config
-         */
         driver.navigate().to(simpleForm);
         driver.findElement(By.id("user-message")).sendKeys("Test");
         driver.findElement(By.cssSelector("button.btn:nth-child(2)")).click();
