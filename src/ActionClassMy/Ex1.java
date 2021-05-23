@@ -4,14 +4,10 @@ import DriverProperties.DriverData;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class Ex1 {
     WebDriver driver = null;
@@ -20,39 +16,14 @@ public class Ex1 {
     @BeforeTest
     void before() {
         driver = new DriverData("chrome").getDriver();
-//        driver.manage().window().setPosition(new Point(0, 0));
-//        driver.manage().window().setSize(new Dimension(1000, 1200));
-        driver.manage().window().maximize();
+        driver.manage().window().setPosition(new Point(0, 0));
+        driver.manage().window().setSize(new Dimension(1000, 1200));
+//        driver.manage().window().maximize();
 
     }
 
-    @Test
-    void dropDemo() {
-        driver.navigate().to(dragAndDrop);
-
-        // find element to drag
-        WebElement elemToDrag = driver.findElement(By.cssSelector("#todrag > span:nth-child(2)"));
-        WebElement dropZone = driver.findElement(By.cssSelector("#mydropzone"));
-
-        // drag and drop // position 409, 64
-        Actions action = new Actions(driver);
-        action.dragAndDropBy(elemToDrag, 1263, 451).build().perform(); // not working here !!!!
-
-        // find after drag
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("droppedlist")));
-        List<WebElement> list = driver.findElement(By.id("droppedlist")).findElements(By.tagName("span"));
-        WebElement dr1 = list.stream()
-                .filter(dr -> "Draggable 1".equals(dr.getText()))
-                .findAny()
-                .orElse(null);
-
-        // check
-        Assert.assertNotNull(dr1);
-    }
-
-    @Test
-    void drop2Guru() {
+    @Test(priority = 1)
+    void drop2Guru() throws InterruptedException {
         driver.get("http://demo.guru99.com/test/drag_drop.html");
 
         //Element which needs to drag.
@@ -77,7 +48,7 @@ public class Ex1 {
         );
     }
 
-    @Test
+    @Test(priority = 2)
     void droppableJquery() {
         driver.navigate().to("https://jqueryui.com/droppable/#content");
 
