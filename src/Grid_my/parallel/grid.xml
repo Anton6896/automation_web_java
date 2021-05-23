@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestGrid_01" thread-count="4" parallel="tests" verbose="1">
+
+    <test name="Chrome node 1">
+        <classes>
+            <class name="Grid_my.parallel.T_01"/>
+        </classes>
+    </test>
+
+    <test name="Firefox node 2">
+        <classes>
+            <class name="Grid_my.parallel.T_02"/>
+        </classes>
+    </test>
+
+</suite>

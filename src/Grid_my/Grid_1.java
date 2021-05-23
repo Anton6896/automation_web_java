@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  *
  * <p>
  * creating server selenium (by ip)
- * >>> java -jar ".\selenium-server-standalone-3.141.59.jar -role hub"
+ * >>> java -jar /home/ant/Documents/testing_all/grid_elenium/drivers_for_selenium/selenium-server-standalone-3.141.59.jar -role hub
  * <p>
  * create node that will be connected to server
  * >>> java -Dwebdriver.chrome.driver=/home/ant/Documents/testing_all/grid_elenium/drivers_for_selenium/ubuntu_drivers/chromedriver -jar /home/ant/Documents/testing_all/grid_elenium/drivers_for_selenium/selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.232.131:4444/wd/hub

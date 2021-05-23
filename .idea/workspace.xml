@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34a2a895-2c3c-4761-80f4-ff13b1b0b5ed" name="Default Changelist" comment="grid is working ok" />
+    <list default="true" id="34a2a895-2c3c-4761-80f4-ff13b1b0b5ed" name="Default Changelist" comment="grid is working ok">
+      <change afterPath="$PROJECT_DIR$/src/Grid_my/parallel/T_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Grid_my/parallel/T_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Grid_my/parallel/grid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grid_my/Grid_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid_my/Grid_1.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,24 +46,7 @@
       <recent name="$PROJECT_DIR$/drivers_for_selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Grid_1.t_1">
-    <configuration name="Grid_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Grid_my.Grid_1" />
-      <module name="automation_web_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Grid_my.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testng-7.4.0.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/drivers_for_selenium/testng-7.4.0.jar" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG./home/ant/Documents/testing_all/grid_elenium/src/Grid_my/parallel/grid.xml">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="automation_web_java" />
       <method v="2">
@@ -71,34 +60,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ex_1.ajaxForm" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_web_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TestNG_My.*" />
+          <option name="PATTERN" value="Grid_my.parallel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="TestNG_My" />
-      <option name="MAIN_CLASS_NAME" value="TestNG_My.Ex_1" />
-      <option name="METHOD_NAME" value="ajaxForm" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="Grid_my.parallel" />
+      <option name="MAIN_CLASS_NAME" value="Grid_my.parallel.T_01" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Grid_1.t_1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_01.t_1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_web_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Grid_my.*" />
+          <option name="PATTERN" value="Grid_my.parallel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Grid_my" />
-      <option name="MAIN_CLASS_NAME" value="Grid_my.Grid_1" />
+      <option name="PACKAGE_NAME" value="Grid_my.parallel" />
+      <option name="MAIN_CLASS_NAME" value="Grid_my.parallel.T_01" />
       <option name="METHOD_NAME" value="t_1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -107,9 +95,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/home/anton/Documents/dev/automation_web_java/src/TestNG_My/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="T_02" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_web_java" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/TestNG_My/testng.xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Grid_my.parallel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Grid_my.parallel" />
+      <option name="MAIN_CLASS_NAME" value="Grid_my.parallel.T_02" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="T_02.t_2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Grid_my.parallel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Grid_my.parallel" />
+      <option name="MAIN_CLASS_NAME" value="Grid_my.parallel.T_02" />
+      <option name="METHOD_NAME" value="t_2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/home/ant/Documents/testing_all/grid_elenium/src/Grid_my/parallel/grid.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="automation_web_java" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/Grid_my/parallel/grid.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -119,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Grid_1.t_1" />
-        <item itemvalue="Application.Grid_1" />
-        <item itemvalue="TestNG.Ex_1.ajaxForm" />
-        <item itemvalue="JAR Application.testng-7.4.0.jar" />
-        <item itemvalue="TestNG./home/anton/Documents/dev/automation_web_java/src/TestNG_My/testng.xml" />
+        <item itemvalue="TestNG./home/ant/Documents/testing_all/grid_elenium/src/Grid_my/parallel/grid.xml" />
+        <item itemvalue="TestNG.T_01" />
+        <item itemvalue="TestNG.T_01.t_1" />
+        <item itemvalue="TestNG.T_02.t_2" />
+        <item itemvalue="TestNG.T_02" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621751323058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="grid is working ok">
+      <created>1621751443006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621751443006</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
