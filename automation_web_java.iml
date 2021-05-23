@@ -10,15 +10,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/drivers_for_selenium/testng-7.4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/drivers_for_selenium/selenium-server-standalone-3.141.59.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -36,6 +27,15 @@
         </SOURCES>
         <jarDirectory url="file://$MODULE_DIR$/drivers_for_selenium/selenium-java-3.141.59" recursive="false" />
         <jarDirectory url="file://$MODULE_DIR$/drivers_for_selenium/selenium-java-3.141.59" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/drivers_for_selenium/testng-7.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>
