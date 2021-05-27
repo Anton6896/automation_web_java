@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34a2a895-2c3c-4761-80f4-ff13b1b0b5ed" name="Default Changelist" comment="grid is working ok">
-      <change afterPath="$PROJECT_DIR$/src/IndustryImpl/T_edureka_01.java" afterDir="false" />
+    <list default="true" id="34a2a895-2c3c-4761-80f4-ff13b1b0b5ed" name="Default Changelist" comment="industry play">
+      <change afterPath="$PROJECT_DIR$/src/dataProviderTestNG_my/Provider_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dataProviderTestNG_my/Provider_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IndustryImpl/T_edureka_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IndustryImpl/T_edureka_01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,48 +45,36 @@
       <recent name="$PROJECT_DIR$/drivers_for_selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.T_edureka_01.t_logIn">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="automation_web_java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="automation_web_java" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="T_01" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Provider_2.checkData">
+    <configuration name="Provider_1.setData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_web_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Grid_my.parallel.*" />
+          <option name="PATTERN" value="dataProviderTestNG_my.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Grid_my.parallel" />
-      <option name="MAIN_CLASS_NAME" value="Grid_my.parallel.T_01" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="dataProviderTestNG_my" />
+      <option name="MAIN_CLASS_NAME" value="dataProviderTestNG_my.Provider_1" />
+      <option name="METHOD_NAME" value="setData" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T_01.t_1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Provider_2.checkData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automation_web_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Grid_my.parallel.*" />
+          <option name="PATTERN" value="dataProviderTestNG_my.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Grid_my.parallel" />
-      <option name="MAIN_CLASS_NAME" value="Grid_my.parallel.T_01" />
-      <option name="METHOD_NAME" value="t_1" />
+      <option name="PACKAGE_NAME" value="dataProviderTestNG_my" />
+      <option name="MAIN_CLASS_NAME" value="dataProviderTestNG_my.Provider_2" />
+      <option name="METHOD_NAME" value="checkData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Provider_2.checkData" />
+        <item itemvalue="TestNG.Provider_1.setData" />
         <item itemvalue="TestNG.T_edureka_01.t_logIn" />
         <item itemvalue="TestNG.T_edureka_01" />
         <item itemvalue="TestNG./home/ant/Documents/testing_all/grid_elenium/src/Grid_my/parallel/grid.xml" />
-        <item itemvalue="TestNG.T_01" />
-        <item itemvalue="TestNG.T_01.t_1" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621757015654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="industry play">
+      <created>1621760721013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621760721013</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,9 +201,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="grid is working ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="grid is working ok" />
+    <MESSAGE value="industry play" />
+    <option name="LAST_COMMIT_MESSAGE" value="industry play" />
   </component>
 </project>

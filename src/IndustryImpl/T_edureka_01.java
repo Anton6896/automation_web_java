@@ -19,6 +19,10 @@ import java.util.List;
  * 2. nav to my profile
  * 3. update personal details, career interests
  * 4. logout
+ *
+ * #question > div.post-layout > div.postcell.post-layout--right > div.s-prose.js-post-body > p:nth-child(1)
+ *
+ * .postcell > div:nth-child(1) > p:nth-child(1)
  */
 
 
@@ -31,7 +35,7 @@ public class T_edureka_01 {
         driver = new DriverData("chrome").getDriver();
     }
 
-    @Test(priority = 1)
+    @Test(priority = 0, testName = "login and change")
     void t_logIn() throws InterruptedException {
         driver.get("https://www.edureka.co/");
 
